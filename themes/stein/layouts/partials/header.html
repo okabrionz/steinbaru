@@ -8,19 +8,11 @@
                 </div>
             </div>
             <div class="col-xs-12 text-center menu-1 menu-wrap">
-                <ul>
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="/about-us.html">Nano Ceramic</a></li>
-                    <li><a href='/restorasi-interior.html'>Restorasi Interior</a></li>
-                    <li class="has-dropdown">
-                        <a>Gallery</a>
-                        <ul class="dropdown">
-                            <li><a href="/before-after.html">Before | After</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/video.html">Proses Coating</a></li>
-                    <li><a href="/price-list.html">Price List</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                
+                <ul>{{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}"><a href="{{.URL}}">{{.Name}}</a></li>
+                {{end}}
                 </ul>
             </div>
         </div>

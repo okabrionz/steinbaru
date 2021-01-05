@@ -2,3 +2,35 @@ baseURL = "http://markautodetailing.com/"
 languageCode = "id-id"
 title = "Mark Auto Detailing"
 theme = "stein"
+
+[menu]
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Nano Ceramic"
+    url = "/nano-ceramic/"
+    weight = 5
+
+[[menu.main]]
+    name = "Restorasi Interior"
+    url = "/restorasi-interior/"
+    weight = 3
+[[menu.main]]
+    name = "Coating Process"
+    url = "/coating-process/"
+    weight = 4
+[[menu.main]]
+    name = "Pricing"
+    url = "/price-list/"
+    weight = 2
+[[menu.main]]
+    name = "Before After"
+    url = "/before-after/"
+    weight = 6
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 7

@@ -4,10 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="/images/icon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nano Ceramic Coating Mobil Jakarta - Mark Auto Detailing</title>
+    <title>{{.Params.pagetitle | default .Title}} - {{.Site.Title}}</title>
+
     <meta name="description"
       content="Nano Ceramic Coating untuk mobil Terbaik dari Beeds Premium Ceramic Paint Treatment, dengan ketahanan hingga 5 tahun dan bergaransi. Timbulkan karakter asli dari warna mobil Anda, lindungi dengan nano ceramic coating untuk efek Wet Look.">
-    <link href="https://markautodetailing.co.id/" rel="canonical" />
+    <link href="{{.Permalink}}" rel="canonical" />
   
   
   
@@ -34,7 +35,7 @@
     <link rel="stylesheet" href="/css/flexslider.css">
   
     <!-- Theme style  -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   
     <!-- Modernizr JS -->
@@ -45,3 +46,5 @@
   	<![endif]-->
   
   </head>
+  <div id="page">
+      {{partial "header" .}}
