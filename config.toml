@@ -1,0 +1,4 @@
+baseURL = "http://markautodetailing.com/"
+languageCode = "id-id"
+title = "Mark Auto Detailing"
+theme = "stein"

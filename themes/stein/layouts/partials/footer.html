@@ -1,0 +1,132 @@
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+</script>
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>
+
+<script>/**
+* Uses my experimental, modular and far from ready JavaScript framework :)
+*/
+
+  //select the modules to use
+  I.use('core');
+  I.use('validation');
+  I.use('events');
+  I.use('selectors');
+
+  //wait for all the modules to be loaded
+  I.go(function () {
+    I.bind('change keyup blur focus').to('input', function (e) {
+      if (I.am.valid(e)) {
+        e.srcElement.className = 'valid';
+      } else if (e.type === 'blur') {
+        e.srcElement.className = 'error';
+      } else if (I.am.empty(e.srcElement.value)) {
+        e.srcElement.className = 'warning';
+      } else {
+        e.srcElement.className = '';
+      }
+    });
+
+    I.bind('click').to('input[type="submit"]', function (e) {
+      var inputs = I.select('input');
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].focus();
+      }
+      if (I.select('input.error').length) {
+        e.preventDefault();
+      }
+      //always nu-uh submit on codepen ;)
+      e.preventDefault();
+    });
+  });</script>
+
+<script>var divisor = document.getElementById("divisor"),
+    slider = document.getElementById("slider");
+  function moveDivisor() {
+    divisor.style.width = slider.value + "%";
+  }</script>
+
+<script>$(function () {
+    $('.acc_ctrl').on('click', function (e) {
+      e.preventDefault();
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).next()
+          .stop()
+          .slideUp(300);
+      } else {
+        $(this).addClass('active');
+        $(this).next()
+          .stop()
+          .slideDown(300);
+      }
+    });
+  });</script>
+
+<script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+</script>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="/js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="/js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="/js/jquery.waypoints.min.js"></script>
+<!-- Waypoints -->
+<script src="/js/jquery.stellar.min.js"></script>
+<!-- Flexslider -->
+<script src="/js/jquery.flexslider-min.js"></script>
+<!-- Main -->
+<script src="/js/main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/js/lazyload.min.js"></script>
+<script>
+  var lazyLoadInstance = new LazyLoad({
+    // Your custom settings go here
+  });
+</script>
