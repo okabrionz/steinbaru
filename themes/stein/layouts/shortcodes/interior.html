@@ -1,6 +1,164 @@
-<div id="page">
-    {{partial "header" .}}
-    <main>
-        
-    </main>
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: aliceblue;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+
+    .gallery-thumbs {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .gallery-thumbs .swiper-slide {
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+</style>
+<h2 class="text-secondary" style="color: #ffffff; text-align: center; padding: 1em 0; margin-bottom: 0">BEFORE AFTER PORTFOLIO</h2>
+<div class="container">
+    
+	<div class="swiper-container gallery-top">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-4.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-6.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-7.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-8.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-9.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-10.jpg)">
+			</div>
+		</div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next swiper-button-white"></div>
+		<div class="swiper-button-prev swiper-button-white"></div>
+	</div>
+	<div class="swiper-container gallery-thumbs">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-4.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-6.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-7.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-8.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-9.jpg)">
+			</div>
+			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-10.jpg)">
+			</div>
+		</div>
+	</div>
 </div>
+<div class="container">
+    <h2 style="text-align: center;margin-top: 2em;">CHOOSE</h2>
+    <div class="col-md-4"><img alt="Nano Ceramic Coating Terbaik Jakarta picture" title="Coating Mobil Terbaik Jakarta"
+            class="lazy" data-src="/images/interior.jpg" width="100%" height="100%">
+        <div class="btn-beforeafter">
+            <p><a href="interior.html" class="btn btn-primary btn-outline">INTERIOR</a></p>
+        </div>
+    </div>
+
+
+    <div class="col-md-4"><img alt="Nano Ceramic Coating Terbaik Jakarta picture" title="Coating Mobil Terbaik Jakarta"
+            class="lazy" data-src="/images/exterior.jpg" width="100%">
+        <div class="btn-beforeafter">
+            <p><a href="/exterior" class="btn btn-primary btn-outline">EKSTERIOR</a></p>
+        </div>
+    </div>
+    <div class="col-md-4"><img alt="Nano Ceramic Coating Terbaik Jakarta picture" title="Coating Mobil Terbaik Jakarta"
+            class="lazy" data-src="/images/mesin.jpg" width="100%">
+        <div class="btn-beforeafter">
+            <p><a href="engine.html" class="btn btn-primary btn-outline">ENGINE BAY</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="typeform-widget" data-url="https://form.typeform.com/to/zA3dvq?typeform-medium=embed-snippet"
+    style="width: 100%; height: 500px;"></div>
+<script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+
+
+
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      loop: true,
+      freeMode: true,
+      loopedSlides: 5, //looped slides should be the same
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      loop:true,
+      loopedSlides: 5, //looped slides should be the same
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+	</script>

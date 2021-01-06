@@ -6,37 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{.Params.pagetitle | default .Title}} - {{.Site.Title}}</title>
 
-    <meta name="description"
-      content="Nano Ceramic Coating untuk mobil Terbaik dari Beeds Premium Ceramic Paint Treatment, dengan ketahanan hingga 5 tahun dan bergaransi. Timbulkan karakter asli dari warna mobil Anda, lindungi dengan nano ceramic coating untuk efek Wet Look.">
+    <meta name="description" content="Nano Ceramic Coating untuk mobil Terbaik dari Beeds Premium Ceramic Paint Treatment, dengan ketahanan hingga 5 tahun dan bergaransi. Timbulkan karakter asli dari warna mobil Anda, lindungi dengan nano ceramic coating untuk efek Wet Look.">
     <link href="{{.Permalink}}" rel="canonical" />
   
   
   
-    <meta itemprop="name" content="Nano Ceramic Coating untuk Mobil Jakarta &amp;amp; Bandung">
-    <meta itemprop="description" content="Nano Ceramic Coating untuk mobil Terbaik dari Beeds Premium Ceramic Paint Treatment, dengan ketahanan hingga 5 tahun dan bergaransi. Timbulkan karakter asli dari warna mobil Anda, lindungi dengan nano ceramic coating untuk efek Wet Look.">
-  
-  
-  
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Nano Ceramic Coating untuk Mobil Jakarta &amp;amp; Bandung" />
-    <meta name="twitter:description"
-      content="Nano Ceramic Coating untuk mobil Terbaik dari Beeds Premium Ceramic Paint Treatment, dengan ketahanan hingga 5 tahun dan bergaransi. Timbulkan karakter asli dari warna mobil Anda, lindungi dengan nano ceramic coating untuk efek Wet Look." />
-  
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/schema.html" . }}
+
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
   
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="/css/animate.css">
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="/css/icomoon.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
     <!-- Flexslider  -->
     <link rel="stylesheet" href="/css/flexslider.css">
   
     <!-- Theme style  -->
-    <link rel="stylesheet" href="/css/style.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
   
     <!-- Modernizr JS -->
     <script src="/js/modernizr-2.6.2.min.js"></script>
@@ -46,5 +39,3 @@
   	<![endif]-->
   
   </head>
-  <div id="page">
-      {{partial "header" .}}

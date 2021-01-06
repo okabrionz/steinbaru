@@ -38,10 +38,17 @@ body {
   }
 }
 
-.header > p {
+.headz > p {
   color: #aaaaaa !important;
   text-decoration: none;
   font-size: 18px;
+}
+.headz >  h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0 0 20px 0;
 }
 p {
   color: #000000;
@@ -95,12 +102,6 @@ a:hover, a:active, a:focus {
 }
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "arial", Georgia, serif;
-  font-weight: 400;
-  margin: 0 0 20px 0;
-}
-.header > h1, h2, h3, h4, h5, h6, figure {
-  color: rgb(255, 255, 255);
   font-family: "arial", Georgia, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
