@@ -1,5 +1,5 @@
 /*
- * zoomerang.js - http://yyx990803.github.io/zoomerang/
+ * zoomerang.js - https://yyx990803.github.io/zoomerang/
  */
 
 (function () {
