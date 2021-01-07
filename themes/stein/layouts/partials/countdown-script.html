@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    $('#mark-promo').countdown('2021/2/10 12:34:56')
+        .on('update.countdown', function (event) {
+            var format = '<span class="text-info">%H:</span><span class="text-warning">%M:</span><span class="text-danger">%S</span>';
+            if (event.offset.totalDays > 0) {
+                format = '<span class="text-success">%-d</span> Day%!d ' + format;
+            }
+            if (event.offset.weeks > 0) {
+                format = '<span class="text-primary">%-w</span> Week%!w ' + format;
+            }
+            $(this).html(event.strftime(format));
+        })
+        .on('finish.countdown', function (event) {
+            $(this).html('This offer has expired!')
+                .parent().addClass('sr-only');
+
+        });
+</script>

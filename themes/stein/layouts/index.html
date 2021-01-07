@@ -1,30 +1,30 @@
 {{define "main"}}
-<main>
-    <div class="page-header bg-dark mt-3">
-        <div class="container">
+<main class="container">
+    <div class="page-header">
+        <div class="container bg-dark">
             <div class="row">
                 <div class="col-md-6 col-md-4" style="background-color: black;color:#ffffff; padding: 0"
                     data-animate-effect="fadeInLeft">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6aqtHe033go"
-                            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/6aqtHe033go?autoplay=1><img src=https://img.youtube.com/vi/6aqtHe033go/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6aqtHe033go"
+                            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/6aqtHe033go?autoplay=1><img src=https://img.youtube.com/vi/6aqtHe033go/hqdefault.jpg> <span>▶</span></a>"
                             frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"></iframe>
+                            allowfullscreen>
+                        </iframe>
                     </div>
                     <br>
                 </div>
                 <br>
                 <div class="col-md-5 col-md-push-1">
-                    <div class="headz">
-                        <h3>ABOUT MARK INDONESIA</h3>
-                        <p>Mark Auto Detailing menghadirkan pelindung eksterior kendaraan dengan tekhnologi German Dan
+                    <div class="header">
+                        <h2 class="display-3 text-white">ABOUT MARK INDONESIA</h2>
+                        <p class="text-white">Mark Auto Detailing menghadirkan pelindung eksterior kendaraan dengan tekhnologi German Dan
                             Jepang. Didukung oleh tenaga profesional yang memiliki pengalaman lebih dari 5 tahun, kami
                             memberikan perlindungan yang bermutu untuk kendaraan anda. Perlindungan dari MARK adalah
                             yang terbaik karena merupakan produk laminating mobil yang sudah disertifikasi</p>
 
-                        <p>Segera lindungi aset kendaraan anda sekarang juga, tidak perlu lagi
+                        <p class="text-white">Segera lindungi aset kendaraan anda sekarang juga, tidak perlu lagi
                             khawatir soal jamur air, noda membandel, baret halus, warna kusam, rusak akibat kotoran
                             burung, cat bolong akibat kerikil.
                         </p>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-
+    {{partial "countdown" .}}
     <div class="container" style="margin:0; width:100%; padding:1em">
         <div class="instagram text-center">
             <h2>MARK <strong>PORTOFOLIO</strong></h2>
@@ -67,10 +67,9 @@
                             </button>
                             <div class="acc_panel">
                                 <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe width="560" height="315"
-                                        src="https://www.youtube-nocookie.com/embed/3B7KNlKjV4Q"
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3B7KNlKjV4Q"
                                         frameborder="0"
-                                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#ffffff;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/3B7KNlKjV4Q?autoplay=1><img src=https://img.youtube.com/vi/3B7KNlKjV4Q/hqdefault.jpg><span>&#x25BA;</span></a>"
+                                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#ffffff;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3B7KNlKjV4Q?autoplay=1><img src=https://img.youtube.com/vi/3B7KNlKjV4Q/hqdefault.jpg><span>&#x25BA;</span></a>"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen>
                                     </iframe>
@@ -83,12 +82,14 @@
                             </button>
                             <div class="acc_panel">
                                 <div class="embed-responsive embed-responsive-4by3"><iframe width="540" height="675"
-                                        src="https://www.youtube-nocookie.com/embed/6e5jR1kpXiM" frameborder="0"srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#ffffff;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/6e5jR1kpXiM?autoplay=1><img src=https://img.youtube.com/vi/6e5jR1kpXiM/hqdefault.jpg><span>&#x25BA;</span></a>"
+                                        src="https://www.youtube.com/embed/6e5jR1kpXiM" frameborder="0"
+                                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#ffffff;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/6e5jR1kpXiM?autoplay=1><img src=https://img.youtube.com/vi/6e5jR1kpXiM/hqdefault.jpg><span>&#x25BA;</span></a>"
                                         frameborder="0"
-                                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#ffffff;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/3B7KNlKjV4Q?autoplay=1><img src=https://img.youtube.com/vi/3B7KNlKjV4Q/hqdefault.jpg><span>&#x25BA;</span></a>"
+                                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#ffffff;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3B7KNlKjV4Q?autoplay=1><img src=https://img.youtube.com/vi/3B7KNlKjV4Q/hqdefault.jpg><span>&#x25BA;</span></a>"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe> </div>
-
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
                             </div>
                         </li>
                         <li>
@@ -96,11 +97,13 @@
                                 <h2>TOYOTA</h2>
                             </button>
                             <div class="acc_panel">
-                                <div class="embed-responsive embed-responsive-4by3"><iframe width="540" height="675"
-                                            src="https://www.youtube-nocookie.com/embed/jol8wh03YW4" frameborder="0"
-                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#ffffff;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/3B7KNlKjV4Q?autoplay=1><img src=https://img.youtube.com/vi/3B7KNlKjV4Q/hqdefault.jpg><span>&#x25BA;</span></a>"
-                                            allowfullscreen>
-                                        </iframe> 
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe width="540" height="675" src="https://www.youtube.com/embed/jol8wh03YW4"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#ffffff;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3B7KNlKjV4Q?autoplay=1><img src=https://img.youtube.com/vi/3B7KNlKjV4Q/hqdefault.jpg><span>&#x25BA;</span></a>"
+                                        allowfullscreen>
+                                    </iframe>
                                 </div>
                             </div>
                         </li>
@@ -111,26 +114,23 @@
                             </button>
                             <div class="acc_panel">
                                 <div class="embed-responsive embed-responsive-4by3"><iframe width="540" height="675"
-                                            src="https://www.youtube-nocookie.com/embed/4fOzoOHgPgI" frameborder="0"
-                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe> </div>
+                                        src="https://www.youtube.com/embed/4fOzoOHgPgI" frameborder="0"
+                                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/4fOzoOHgPgI?autoplay=1><img src=https://img.youtube.com/vi/4fOzoOHgPgI/hqdefault.jpg> <span>▶</span></a>"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
                                 </div>
                             </div>
                         </li>
-
                     </ul>
                 </div>
             </div>
-            <div class="container">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-            </div>
+        </div>
+        <div class="container">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         </div>
     </div>
-
-
-
-
-
     <div class="baru ">
         <div class="container text-center" style="padding-bottom: 3em">
             <h1 style="color: white; text-align: left;">MARK <strong>BENEFITS</strong></h1>
@@ -177,12 +177,14 @@
                         <div class="col-md-4">
 
                             <div class="embed-responsive embed-responsive-4by3">
-                                <iframe width="100%" height="auto"
-                                    src="https://www.youtube-nocookie.com/embed/jqgMzfL1qYw" frameborder="0"
+                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/jqgMzfL1qYw"
+                                    frameborder="0"
+                                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/jqgMzfL1qYw?autoplay=1><img src=https://img.youtube.com/vi/jqgMzfL1qYw/hqdefault.jpg> <span>▶</span></a>"
+                                    frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen>
                                 </iframe>
-                                </div>
+                            </div>
 
 
                         </div>
@@ -193,10 +195,15 @@
                         <h2>60% More Scratch Resistence</h2>
                         <div class="col-md-4">
 
-                            <div class="video-container" style="width:100%"><iframe width="100%" height="auto"
-                                    src="https://www.youtube-nocookie.com/embed/wX--zlCwU80" frameborder="0"
+                            <div class="video-container" style="width:100%">
+                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/wX--zlCwU80"
+                                    frameborder="0"
+                                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/wX--zlCwU80?autoplay=1><img src=https://img.youtube.com/vi/wX--zlCwU80/hqdefault.jpg> <span>▶</span></a>"
+                                    frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe></div>
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
 
                         </div>
                         <div class="col-md-8"><br>Helps keep your paint protected from swirls and scratches.</div>
@@ -204,12 +211,15 @@
                     <section>
                         <h2>Insane Gloss Technology</h2>
                         <div class="col-md-4">
-
-                            <div class="video-container" style="width:100%"><iframe width="100%" height="auto"
-                                    src="https://www.youtube-nocookie.com/embed/QlQr9ooIY9o" frameborder="0"
+                            <div class="video-container" style="width:100%">
+                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/QlQr9ooIY9o"
+                                    frameborder="0"
+                                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/QlQr9ooIY9o?autoplay=1><img src=https://img.youtube.com/vi/QlQr9ooIY9o/hqdefault.jpg> <span>▶</span></a>"
+                                    frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe></div>
-
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
                         </div>
                         <div class="col-md-8"><br>Amazing long lasting candy-like gloss. Get the just-detailed look
                             every moment!</div>
@@ -217,28 +227,20 @@
                     <section>
                         <h2>Chemical Resistence</h2>
                         <div class="col-md-4"> <img class="lazy" data-src="/images/fitur4.jpg" width="100%"> </div>
-                        <div class="col-md-8"><br>creates a durable glass like membrane to provide extreme
-                            protection
+                        <div class="col-md-8"><br>creates a durable glass like membrane to provide extreme protection
                             against the elements.</div>
                     </section>
                 </div>
             </div>
-
         </div>
     </div>
-
-
     <div class="container">
         <h2 style="margin-top: 40px;"><strong>WHY CHOOSE</strong> MARK</h2>
     </div>
-
-
-
     </div>
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-
                 <h3>E-<strong>Warranty</strong></h3>
                 <img class="lazy" data-src="/images/warranty.png" width="70%">
             </div>
@@ -259,7 +261,6 @@
 
             <!-- The four columns -->
             <div class="tabbedimage">
-
                 <div class="row">
                     <div class="column">
                         <img class="lazy" data-src="/images/richard-muljadi.jpg" alt="Richard Muljadi"
@@ -286,46 +287,41 @@
                 </div>
             </div>
         </div>
-
         <div class="container text-center">
             <h3>High Class & <strong>Tested Product</strong> (Demo)</h3>
-            <div style="margin : 0 ; padding: 0; border: 3px solid black;
-border-radius: 5px; ">
-
+            <div style="margin : 0 ; padding: 0; border: 3px solid black; border-radius: 5px; ">
                 <div class="col-md-6 col-md-4" style="padding: 0; " data-animate-effect="fadeInLeft">
-
                     <br>
-
                     <strong>
                         <P style="margin:0;">Self Cleaning & Hydrophobic Effect</P>
                     </strong>
                     <br>
-
-                    <div class="video-container" width="100%"><iframe width="560" height="315"
-                            src="https://www.youtube-nocookie.com/embed/bhM18cq0xbg" frameborder="0"
+                    <div class="video-container" width="100%">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bhM18cq0xbg" frameborder="0"
+                            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/bhM18cq0xbg?autoplay=1><img src=https://img.youtube.com/vi/bhM18cq0xbg/hqdefault.jpg> <span>▶</span></a>"
+                            frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe></div>
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                     <br>
                 </div>
-
                 <div class="col-md-6 col-md-4" style="padding: 0;  " data-animate-effect="fadeInLeft">
-
                     <br>
-
                     <strong>
                         <P style="margin:0">Designed for Extreme Weather</P>
                     </strong>
                     <br>
-
                     <div class="video-container" width="100%"><iframe width="560" height="315"
-                            src="https://www.youtube-nocookie.com/embed/4jQL1Nqqkjc" frameborder="0"
+                            src="https://www.youtube.com/embed/4jQL1Nqqkjc" frameborder="0"
+                            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/4jQL1Nqqkjc?autoplay=1><img src=https://img.youtube.com/vi/4jQL1Nqqkjc/hqdefault.jpg> <span>▶</span></a>"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe></div>
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                     <br>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -347,21 +343,22 @@ border-radius: 5px; ">
 
 
 
-        <div class="container-fluid"
-            style="background: linear-gradient(to bottom, black 0%, white 25%);; padding: 1em; margin: 0; width: 100%;">
+        <div class="container"
+            style="background: linear-gradient(to bottom, black 0%, white 25%);">
             <br>
-            <a href="https://stein-guard.com/restorasi-interior.html"><img class="lazy"
-                    data-src="/images/interior-restorasi copy-kecil.png" width="250px"></a>
+            <a href="/restorasi-interior"><img class="lazy" data-src="/images/interior-restorasi copy-kecil.png"
+                    width="250px"></a>
             <h2>MARK <strong>RESTORASI INTERIOR</strong></h2>
 
 
             <div class="row">
                 <div class="col-md-4">
-                    <p><strong>Mark VIP</strong> adalah service dengan fokus khusus memperbaiki komponen interior tanpa
+                    <p class="text-dark"><strong>Mark VIP</strong> adalah service dengan fokus khusus memperbaiki
+                        komponen interior tanpa
                         menghilangkan ke-orisinil-an komponen tersebut.</p>
 
-                    <p>MARK VIP (Vehicle Interior Protection) merupakan solusi dari :
-                    <ul>
+                    <p class="text-dark">MARK VIP (Vehicle Interior Protection) merupakan solusi dari :
+                    <ul class="text-dark">
                         <strong>
                             <li>Leather Sobek / Tergores </li>
                             <li>Leather Mengkerut </li>
@@ -376,29 +373,28 @@ border-radius: 5px; ">
                 </div>
 
                 <div class="col-md-4" style="padding: 3em; padding-top:0">
-                    <h3> Before After</h3>
+                    <h3 class="text-dark"> Before After</h3>
                     <div class="section-heading" width="100%">
-                        <img class="mySlides lazy" class="lazy" data-src="/images/mlbutton1.jpg"
-                            style="width:100%">
+                        <img class="mySlides lazy" class="lazy" data-src="/images/mlbutton1.jpg" style="width:100%">
                         <img class="mySlides lazy" class="lazy" data-src="/images/alphard.jpg" style="width:100%">
                         <img class="mySlides lazy" class="lazy" data-src="/images/alphard8.jpg" style="width:100%">
                         <img class="mySlides lazy" class="lazy" data-src="/images/gklassdashboard.jpg"
                             style="width:100%">
                         <img class="mySlides lazy" class="lazy" data-src="/images/alphard2.jpg" style="width:100%">
                         <img class="mySlides lazy" class="lazy" data-src="/images/alphard6.jpg" style="width:100%">
-                        <img class="mySlides lazy" class="lazy" data-src="/images/mlbutton2.jpg"
-                            style="width:100%">
+                        <img class="mySlides lazy" class="lazy" data-src="/images/mlbutton2.jpg" style="width:100%">
                         <button class="btn btn-xs btn-primary" onclick="plusDivs(-1)">&#10094;</button>
                         <button class="btn btn-xs btn-primary" onclick="plusDivs(1)">&#10095;</button>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <h2> Process</h2>
+                    <h3 class="text-dark"> Process</h3>
                     <div style="overflow: hidden; position: relative; width: 75%;" width="100%">
                         <div class="embed-responsive embed-responsive-4by3">
-                            <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/SYlGNgY8R20"
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SYlGNgY8R20"
                                 frameborder="0"
+                                srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/SYlGNgY8R20?autoplay=1><img src=https://img.youtube.com/vi/SYlGNgY8R20/hqdefault.jpg> <span>▶</span></a>"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                             </iframe>
@@ -408,11 +404,13 @@ border-radius: 5px; ">
             </div>
         </div>
 </main>
-<div class="typeform-widget" data-url="https://form.typeform.com/to/zA3dvq?typeform-medium=embed-snippet"
-    style="width: 100%; height: 500px;">
+<div class="container-fluid">
+    <div class="typeform-widget lazy" data-url="https://form.typeform.com/to/zA3dvq?typeform-medium=embed-snippet"
+        style="width: 100%; height: 500px;">
+    </div>
 </div>
 
-<script>
+<script async>
     (function () {
         var qs, js, q, s, d = document,
             gi = d.getElementById,
