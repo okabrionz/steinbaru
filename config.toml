@@ -3,6 +3,8 @@ languageCode = "id-id"
 title = "Mark Auto Detailing"
 theme = "stein"
 sectionPagesMenu = "main"
+disableHugoGeneratorInject = "true"
+
 [menu]
 [[menu.main]]  
     name = "Home"
@@ -12,14 +14,14 @@ sectionPagesMenu = "main"
 [[menu.main]]
     name = "Nano Ceramic"
     url = "/nano-ceramic/"
-    weight = 5
+    weight = 2
 [[menu.main]]
     identifier = "pricing"
     name = "Pricing"
     url = "/price-list/"
-    weight = 2
+    weight = 6
 [[menu.main]]
-    name = "Restorasi Interior"
+    name = "Interior Restoration"
     url = "/restorasi-interior/"
     weight = 3
 [[menu.main]]
@@ -29,8 +31,8 @@ sectionPagesMenu = "main"
 [[menu.main]]
     name = "Before After"
     url = "/before-after/"
-    weight = 6
+    weight = 5
 [[menu.main]]
-    name = "Contact"
+    name = "Contact Us"
     url = "/contact/"
     weight = 7
