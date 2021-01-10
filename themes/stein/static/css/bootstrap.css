@@ -5544,7 +5544,7 @@ a.thumbnail.active {
   position: relative;
   top: -2px;
   right: -21px;
-  color: inherit;
+  color: #ffffff00;
 }
 
 .alert-success {
@@ -6368,17 +6368,17 @@ button.list-group-item-danger.active:focus {
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgb(247, 0, 0);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
 }
 .close:hover, .close:focus {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 button.close {

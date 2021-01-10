@@ -1,9 +1,9 @@
 {{define "main"}}
-<main class="container">
+<main>
     <div class="page-header">
-        <div class="container bg-dark">
+        <div class="bg-dark">
             <div class="row">
-                <div class="col-md-6 col-md-4" style="background-color: black;color:#ffffff; padding: 0"
+                <div class="col-md-6" style="background-color: black;color:#ffffff; padding: 0"
                     data-animate-effect="fadeInLeft">
                     <div class="embed-responsive embed-responsive-4by3">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/6aqtHe033go"
@@ -16,10 +16,11 @@
                     <br>
                 </div>
                 <br>
-                <div class="col-md-5 col-md-push-1">
-                    <div class="header">
+                <div class="col-md-6">
+                    <div class="header px-5 py-2">
                         <h2 class="display-3 text-white">ABOUT MARK INDONESIA</h2>
-                        <p class="text-white">Mark Auto Detailing menghadirkan pelindung eksterior kendaraan dengan tekhnologi German Dan
+                        <p class="text-white">Mark Auto Detailing menghadirkan pelindung eksterior kendaraan dengan
+                            tekhnologi German Dan
                             Jepang. Didukung oleh tenaga profesional yang memiliki pengalaman lebih dari 5 tahun, kami
                             memberikan perlindungan yang bermutu untuk kendaraan anda. Perlindungan dari MARK adalah
                             yang terbaik karena merupakan produk laminating mobil yang sudah disertifikasi</p>
@@ -33,8 +34,10 @@
             </div>
         </div>
     </div>
-    {{partial "countdown" .}}
-    <div class="container" style="margin:0; width:100%; padding:1em">
+    <div class="container">
+        {{partial "countdown" .}}
+    </div>
+    <div class="container">
         <div class="instagram text-center">
             <h2>MARK <strong>PORTOFOLIO</strong></h2>
             <a href="https://www.instagram.com/markautodetailingid/">
@@ -43,12 +46,11 @@
         </div>
     </div>
 
-    <div class="container text-center"
-        style=" background: linear-gradient(to bottom, white 13%, black 58%); width: 100%; padding-top: 0; margin: 0; padding-bottom:30px">
+    <div class="container text-center my-3" style=" background: linear-gradient(to bottom, white 13%, black 58%);">
         <br>
         <h2>MARK <strong>LINE UP</strong></h2>
         <div class="col-md-5">
-            <img class="lazy" data-src="/images/franchiseindonesia14.png" width="100%">
+            <img class="img-responsive lazy" data-src="/images/franchiseindonesia14.png">
         </div>
         <div class="col-md-7" style="margin-top: 2em">
 
@@ -195,7 +197,7 @@
                         <h2>60% More Scratch Resistence</h2>
                         <div class="col-md-4">
 
-                            <div class="video-container" style="width:100%">
+                            <div class="embed-responsive embed-responsive-4by3" style="width:100%">
                                 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/wX--zlCwU80"
                                     frameborder="0"
                                     srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/wX--zlCwU80?autoplay=1><img src=https://img.youtube.com/vi/wX--zlCwU80/hqdefault.jpg> <span>▶</span></a>"
@@ -211,7 +213,7 @@
                     <section>
                         <h2>Insane Gloss Technology</h2>
                         <div class="col-md-4">
-                            <div class="video-container" style="width:100%">
+                            <div class="embed-responsive embed-responsive-4by3" style="width:100%">
                                 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/QlQr9ooIY9o"
                                     frameborder="0"
                                     srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/QlQr9ooIY9o?autoplay=1><img src=https://img.youtube.com/vi/QlQr9ooIY9o/hqdefault.jpg> <span>▶</span></a>"
@@ -293,10 +295,10 @@
                 <div class="col-md-6 col-md-4" style="padding: 0; " data-animate-effect="fadeInLeft">
                     <br>
                     <strong>
-                        <P style="margin:0;">Self Cleaning & Hydrophobic Effect</P>
+                        <p style="margin:0;">Self Cleaning & Hydrophobic Effect</p>
                     </strong>
                     <br>
-                    <div class="video-container" width="100%">
+                    <div class="embed-responsive embed-responsive-4by3" width="100%">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/bhM18cq0xbg" frameborder="0"
                             srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/bhM18cq0xbg?autoplay=1><img src=https://img.youtube.com/vi/bhM18cq0xbg/hqdefault.jpg> <span>▶</span></a>"
                             frameborder="0"
@@ -312,7 +314,7 @@
                         <P style="margin:0">Designed for Extreme Weather</P>
                     </strong>
                     <br>
-                    <div class="video-container" width="100%"><iframe width="560" height="315"
+                    <div class="embed-responsive embed-responsive-4by3" width="100%"><iframe width="560" height="315"
                             src="https://www.youtube.com/embed/4jQL1Nqqkjc" frameborder="0"
                             srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/4jQL1Nqqkjc?autoplay=1><img src=https://img.youtube.com/vi/4jQL1Nqqkjc/hqdefault.jpg> <span>▶</span></a>"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -339,15 +341,14 @@
 
         <br>
 
-        {{partial "testi" .}}
-
-
-
-        <div class="container"
-            style="background: linear-gradient(to bottom, black 0%, white 25%);">
+            {{partial "testi" .}}
+            
+        <div class="container-fluid" style="background: linear-gradient(to bottom, black 0%, white 25%);">
             <br>
-            <a href="/restorasi-interior"><img class="lazy" data-src="/images/interior-restorasi copy-kecil.png"
-                    width="250px"></a>
+            <a href="/restorasi-interior">
+                <img class="lazy" data-src="/images/interior-restorasi copy-kecil.png"
+                    width="250px">
+                </a>
             <h2>MARK <strong>RESTORASI INTERIOR</strong></h2>
 
 
@@ -390,7 +391,7 @@
 
                 <div class="col-md-4">
                     <h3 class="text-dark"> Process</h3>
-                    <div style="overflow: hidden; position: relative; width: 75%;" width="100%">
+                    <div>
                         <div class="embed-responsive embed-responsive-4by3">
                             <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SYlGNgY8R20"
                                 frameborder="0"
@@ -404,9 +405,8 @@
             </div>
         </div>
 </main>
-<div class="container-fluid">
-    <div class="typeform-widget lazy" data-url="https://form.typeform.com/to/zA3dvq?typeform-medium=embed-snippet"
-        style="width: 100%; height: 500px;">
+<div class=" container-fluid">
+    <div class="typeform-widget lazy" data-url="https://form.typeform.com/to/zA3dvq?typeform-medium=embed-snippet" style="height: 500px;">
     </div>
 </div>
 

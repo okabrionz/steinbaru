@@ -202,8 +202,16 @@
     slidesPerView: 1,
     spaceBetween: 15,
     grabCursor: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       640: {
