@@ -84,6 +84,10 @@
 <script src="/js/lazyload.min.js"></script>
 <script src="/js/jquery.countdown.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!--Swiper Scripts-->
+{{partial "swiper-script" .}}
+<!--End Swiper Scripts-->
 <!-- Script Countdown -->
 {{partial "countdown-script"}}
 <!-- End Script Countdown -->
@@ -200,37 +204,5 @@
 <script>
   var lazyLoadInstance = new LazyLoad({
     // Your custom settings go here
-  });
-</script>
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 15,
-    grabCursor: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    }
   });
 </script>
