@@ -125,6 +125,7 @@
             </div>
         </div>
     </div>
+    {{ partial "mark-benefits" . }}
     <div class="container" id="why-mark">
         <h2 style="margin-top: 40px;"><strong>WHY CHOOSE</strong> MARK</h2>
     </div>
