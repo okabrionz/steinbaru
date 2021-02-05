@@ -1,26 +1,74 @@
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="/images/icon.png" rel="shortcut icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{.Params.pagetitle | default .Title}} - {{.Site.Title}}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <meta name="description" content="Nano Ceramic Coating untuk mobil Terbaik dari Beeds Premium Ceramic Paint Treatment, dengan ketahanan hingga 5 tahun dan bergaransi. Timbulkan karakter asli dari warna mobil Anda, lindungi dengan nano ceramic coating untuk efek Wet Look.">
-    <link href="{{.Permalink}}" rel="canonical" />
-  
-  
-  
-    {{ template "_internal/twitter_cards.html" . }}
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/schema.html" . }}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="/favicon.ico" rel="shortcut icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{.Params.pagetitle | default .Title}} - {{.Site.Title}}</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
-  
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="https://d33wubrfki0l68.cloudfront.net/bundles/a2a4cecb59f7e498ba9e3b1c3f1f161cb73c1c4e.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/css/styles.min.css">
-  
-  </head>
+  <meta name="description"
+    content="Nano Ceramic Coating untuk mobil Terbaik dari Beeds Premium Ceramic Paint Treatment, dengan ketahanan hingga 5 tahun dan bergaransi. Timbulkan karakter asli dari warna mobil Anda, lindungi dengan nano ceramic coating untuk efek Wet Look.">
+  <link href="{{.Permalink}}" rel="canonical" />
+
+
+
+  {{ template "_internal/twitter_cards.html" . }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/schema.html" . }}
+
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap  -->
+  <link rel="stylesheet"
+    href="https://d33wubrfki0l68.cloudfront.net/bundles/a2a4cecb59f7e498ba9e3b1c3f1f161cb73c1c4e.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/styles.min.css">
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '719818122006906');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=719818122006906&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <!-- Global site tag (gtag.js) - Google Ads: 834812788 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-834812788"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-834812788');
+  </script>
+  <!-- Event snippet for Kontak mark sunter conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-834812788/_OqvCOW7sPIBEPT2iI4D',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+</head>
